@@ -151,20 +151,17 @@ export async function POST(req: NextRequest) {
       // 清除缓存，确保下次获取配置时是最新的
       clearConfigCache();
 
-      // 等待 Upstash 数据同步完成
-      await new Promise(resolve => setTimeout(resolve, 2000));
-
       // 注册成功后自动登录
-      const response = NextResponse.json({
-        ok: true,
-        message: '注册成功，已自动登录'
+      const response = NextResponse.json({ 
+        ok: true, 
+        message: '注册成功，已自动登录' 
       });
-
+      
       const cookieValue = await generateAuthCookie(
         username,
         password,
         'user',
-        false  // 数据库模式不在cookie中存储密码，只存储签名
+        false
       );
       const expires = new Date();
       expires.setDate(expires.getDate() + 7); // 7天过期
