@@ -953,7 +953,7 @@ services:
 
 ## 📊 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=SzeMeng76/LunaTV&type=Date)](https://www.star-history.com/#SzeMeng76/LunaTV&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=XWF888/LunaTV&type=Date)](https://www.star-history.com/#XWF888/LunaTV&Date)
 
 ---
 
